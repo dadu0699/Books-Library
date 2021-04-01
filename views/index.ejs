@@ -6,7 +6,7 @@
 
         <% books.forEach(book => { %>
         <figure class="card">
-            <img src="<%= book.image %>" />
+            <img src="/uploads/<%= book.image %>" />
             <figcaption><%= book.title %></figcaption>
         </figure>
         <% }) %>
@@ -18,7 +18,7 @@
 
         <% latestBooks.reverse().forEach(book => { %>
         <figure class="article">
-            <img src="<%= book.image %>" />
+            <img src="/uploads/<%= book.image %>" />
             <figcaption>
                 <h3><%= book.title %></h3>
                 <p><%= book.description %></p>
